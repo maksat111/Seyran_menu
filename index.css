@@ -1,0 +1,108 @@
+:root {
+  --blue: #082525;
+  --gray: #f4f4f4;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./fonts/WorkSans-Medium.ttf");
+}
+
+body {
+  margin: 0;
+  background-color: #215454;
+  font-family: "Work Sans";
+  overflow: auto;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.logo {
+  width: 97px;
+  height: 75px;
+  margin: 50px auto 45px;
+}
+
+.menu-categories {
+  padding: 0 20px;
+}
+
+.category-text {
+  color: var(--white);
+  opacity: 80%;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.categories-card-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--blue);
+  width: 65px;
+  min-width: 65px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 5px 15px 5px;
+}
+
+.category-card-image {
+  height: 65px;
+  width: 100%;
+}
+
+.category-card-image > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.card-menu-name {
+  color: #f4f4f4;
+  font-size: 12px;
+  margin: 0;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.meal-container {
+  padding: 40px 20px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  gap: 10px 15px;
+  position: relative;
+}
+
+.meal-card {
+  width: 100%;
+  height: 222px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.meal-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.meal-image-container > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}

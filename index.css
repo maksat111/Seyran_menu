@@ -91,6 +91,19 @@ body {
   height: 222px;
   border-radius: 10px;
   position: relative;
+  z-index: 5;
+}
+
+.price-container {
+  background-color: var(--blue);
+  width: fit-content;
+  padding: 6px 15px;
+  margin: 0;
+  border-radius: 10px 0px 10px 0px;
+}
+
+.price-container > p {
+  margin: 0;
 }
 
 .meal-image-container {
@@ -105,4 +118,40 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px;
+}
+
+.price-and-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#11141600, #111416e5);
+  border-radius: 10px;
+}
+
+.meal-name-container {
+  padding: 15px;
+}
+
+.meal-name-container > p {
+  margin: 0;
+}
+
+.meal-name-tm {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.meal-name-ru {
+  margin-top: 5px;
+  color: var(--white);
+  opacity: 50%;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
 }

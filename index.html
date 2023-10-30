@@ -13,28 +13,28 @@
     <img class="logo" src="./assets/logo.svg" alt="Seyran menu" />
   </div>
 
-  <div id="menuCategories" class="menu-categories">
-    <div class="categories-card-container">
-      <div class="category-card">
-        <div class="category-card-image">
-          <img src="./assets/garnirlar.jpg" alt="garnirlar" />
-        </div>
-        <p class="card-menu-name">Garnirlar</p>
-      </div>
+  <div class="menu-categories">
+    <div id="categoriesCardContainer" class="categories-card-container">
 
-      <div class="category-card">
+      <a href="#Ertirlikp" class="category-card border-category">
         <div class="category-card-image">
           <img src="./assets/garnirlar.jpg" alt="garnirlar" />
         </div>
         <p class="card-menu-name">Ertirlik</p>
-      </div>
+      </a>
+      <a href="#Garnirlarp" class="category-card">
+        <div class="category-card-image">
+          <img src="./assets/garnirlar.jpg" alt="garnirlar" />
+        </div>
+        <p class="card-menu-name">Garnirlar</p>
+      </a>
 
-      <div class="category-card">
+      <a href="#Saladlarp" class="category-card">
         <div class="category-card-image">
           <img src="./assets/garnirlar.jpg" alt="garnirlar" />
         </div>
         <p class="card-menu-name">Salatlar</p>
-      </div>
+      </a>
 
       <div class="category-card">
         <div class="category-card-image">
@@ -57,13 +57,81 @@
         <p class="card-menu-name">Garnirlar</p>
       </div>
     </div>
+    <div id="scrolledMenuCategories" data-aos="fade-down" class="non-scrolled-menu-categories">
+      <a href="#Ertirlik" name="Ertirlik" class="scrolled-category-card">
+        Ertirlik
+      </a>
+      <a href="#Garnirlar" name="Garnirlar" class="scrolled-category-card">
+        Garnirlar
+      </a>
+      <a href="#Saladlar" name="Saladlar" class="scrolled-category-card">
+        Saladlar
+      </a>
+      <div class="scrolled-category-card">
+        Saladlar
+      </div>
+      <div class="scrolled-category-card">
+        Saladlar
+      </div>
+      <div class="scrolled-category-card">
+        Saladlar
+      </div>
+    </div>
   </div>
-  
+
   <div class="meals-list">
-    
-    <p class="category-name-text">Ertirlik</p>
-    
-    <div class="meal-container">
+
+    <p id="Ertirlikp" class="category-name-text">Ertirlik</p>
+
+    <div id="Ertirlik" class="meal-container">
+      <div class="meal-card">
+        <div class="meal-image-container">
+          <img src="./assets/garnirlar.jpg" alt="surat" />
+        </div>
+        <div class="price-and-name">
+          <div class="price-container">
+            <span class="price-number">195</span>
+            <span class="price-currency">TMT</span>
+          </div>
+          <div class="meal-name-container">
+            <p class="meal-name-tm">T-Bone Steyk</p>
+            <p class="meal-name-ru">T-Бон Стэйк</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meal-card">
+        <div class="meal-image-container">
+          <img src="./assets/garnirlar.jpg" alt="surat" />
+        </div>
+        <div class="price-and-name">
+          <div class="price-container">
+            <span class="price-number">195</span>
+            <span class="price-currency">TMT</span>
+          </div>
+          <div class="meal-name-container">
+            <p class="meal-name-tm">T-Bone Steyk</p>
+            <p class="meal-name-ru">T-Бон Стэйк</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meal-card">
+        <div class="meal-image-container">
+          <img src="./assets/garnirlar.jpg" alt="surat" />
+        </div>
+        <div class="price-and-name">
+          <div class="price-container">
+            <span class="price-number">195</span>
+            <span class="price-currency">TMT</span>
+          </div>
+          <div class="meal-name-container">
+            <p class="meal-name-tm">T-Bone Steyk</p>
+            <p class="meal-name-ru">T-Бон Стэйк</p>
+          </div>
+        </div>
+      </div>
+
       <div class="meal-card">
         <div class="meal-image-container">
           <img src="./assets/garnirlar.jpg" alt="surat" />
@@ -97,9 +165,10 @@
       </div>
     </div>
 
-    <p class="category-name-text">Ertirlik</p>
     
-    <div class="meal-container">
+    <p id="Garnirlarp" class="category-name-text">Garnirler</p>
+
+    <div id="Garnirlar" class="meal-container">
       <div class="meal-card">
         <div class="meal-image-container">
           <img src="./assets/garnirlar.jpg" alt="surat" />
@@ -115,6 +184,7 @@
           </div>
         </div>
       </div>
+
       <div class="meal-card">
         <div class="meal-image-container">
           <img src="./assets/garnirlar.jpg" alt="surat" />
@@ -130,6 +200,7 @@
           </div>
         </div>
       </div>
+
       <div class="meal-card">
         <div class="meal-image-container">
           <img src="./assets/garnirlar.jpg" alt="surat" />
@@ -145,6 +216,7 @@
           </div>
         </div>
       </div>
+
       <div class="meal-card">
         <div class="meal-image-container">
           <img src="./assets/garnirlar.jpg" alt="surat" />
@@ -160,66 +232,7 @@
           </div>
         </div>
       </div>
-      <div class="meal-card">
-        <div class="meal-image-container">
-          <img src="./assets/garnirlar.jpg" alt="surat" />
-        </div>
-        <div class="price-and-name">
-          <div class="price-container">
-            <span class="price-number">195</span>
-            <span class="price-currency">TMT</span>
-          </div>
-          <div class="meal-name-container">
-            <p class="meal-name-tm">T-Bone Steyk</p>
-            <p class="meal-name-ru">T-Бон Стэйк</p>
-          </div>
-        </div>
-      </div>
-      <div class="meal-card">
-        <div class="meal-image-container">
-          <img src="./assets/garnirlar.jpg" alt="surat" />
-        </div>
-        <div class="price-and-name">
-          <div class="price-container">
-            <span class="price-number">195</span>
-            <span class="price-currency">TMT</span>
-          </div>
-          <div class="meal-name-container">
-            <p class="meal-name-tm">T-Bone Steyk</p>
-            <p class="meal-name-ru">T-Бон Стэйк</p>
-          </div>
-        </div>
-      </div>
-      <div class="meal-card">
-        <div class="meal-image-container">
-          <img src="./assets/garnirlar.jpg" alt="surat" />
-        </div>
-        <div class="price-and-name">
-          <div class="price-container">
-            <span class="price-number">195</span>
-            <span class="price-currency">TMT</span>
-          </div>
-          <div class="meal-name-container">
-            <p class="meal-name-tm">T-Bone Steyk</p>
-            <p class="meal-name-ru">T-Бон Стэйк</p>
-          </div>
-        </div>
-      </div>
-      <div class="meal-card">
-        <div class="meal-image-container">
-          <img src="./assets/garnirlar.jpg" alt="surat" />
-        </div>
-        <div class="price-and-name">
-          <div class="price-container">
-            <span class="price-number">195</span>
-            <span class="price-currency">TMT</span>
-          </div>
-          <div class="meal-name-container">
-            <p class="meal-name-tm">T-Bone Steyk</p>
-            <p class="meal-name-ru">T-Бон Стэйк</p>
-          </div>
-        </div>
-      </div>
+
       <div class="meal-card">
         <div class="meal-image-container">
           <img src="./assets/garnirlar.jpg" alt="surat" />
@@ -236,6 +249,93 @@
         </div>
       </div>
     </div>
+
+    
+    <p id="Saladlarp" class="category-name-text">Saladlar</p>
+
+    <div id="Saladlar" class="meal-container">
+      <div class="meal-card">
+        <div class="meal-image-container">
+          <img src="./assets/garnirlar.jpg" alt="surat" />
+        </div>
+        <div class="price-and-name">
+          <div class="price-container">
+            <span class="price-number">195</span>
+            <span class="price-currency">TMT</span>
+          </div>
+          <div class="meal-name-container">
+            <p class="meal-name-tm">T-Bone Steyk</p>
+            <p class="meal-name-ru">T-Бон Стэйк</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meal-card">
+        <div class="meal-image-container">
+          <img src="./assets/garnirlar.jpg" alt="surat" />
+        </div>
+        <div class="price-and-name">
+          <div class="price-container">
+            <span class="price-number">195</span>
+            <span class="price-currency">TMT</span>
+          </div>
+          <div class="meal-name-container">
+            <p class="meal-name-tm">T-Bone Steyk</p>
+            <p class="meal-name-ru">T-Бон Стэйк</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meal-card">
+        <div class="meal-image-container">
+          <img src="./assets/garnirlar.jpg" alt="surat" />
+        </div>
+        <div class="price-and-name">
+          <div class="price-container">
+            <span class="price-number">195</span>
+            <span class="price-currency">TMT</span>
+          </div>
+          <div class="meal-name-container">
+            <p class="meal-name-tm">T-Bone Steyk</p>
+            <p class="meal-name-ru">T-Бон Стэйк</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meal-card">
+        <div class="meal-image-container">
+          <img src="./assets/garnirlar.jpg" alt="surat" />
+        </div>
+        <div class="price-and-name">
+          <div class="price-container">
+            <span class="price-number">195</span>
+            <span class="price-currency">TMT</span>
+          </div>
+          <div class="meal-name-container">
+            <p class="meal-name-tm">T-Bone Steyk</p>
+            <p class="meal-name-ru">T-Бон Стэйк</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="meal-card">
+        <div class="meal-image-container">
+          <img src="./assets/garnirlar.jpg" alt="surat" />
+        </div>
+        <div class="price-and-name">
+          <div class="price-container">
+            <span class="price-number">195</span>
+            <span class="price-currency">TMT</span>
+          </div>
+          <div class="meal-name-container">
+            <p class="meal-name-tm">T-Bone Steyk</p>
+            <p class="meal-name-ru">T-Бон Стэйк</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
   </div>
 
   <script src="index.js"></script>
